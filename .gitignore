@@ -1,0 +1,21 @@
+.env
+
+# Node.js dependencies
+node_modules/
+
+# Vercel build output
+.vercel/
+
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
