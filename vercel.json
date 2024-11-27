@@ -3,13 +3,5 @@
     "api/sync.js": {
       "runtime": "nodejs18.x"
     }
-  },
-  "cron": {
-    "jobs": [
-      {
-        "path": "/api/sync",
-        "schedule": "*/1 * * * *"
-      }
-    ]
-  }
+  }  
 }

@@ -1,0 +1,21 @@
+name: Schedule API Sync
+
+on:
+  schedule:
+    # Runs every 1 minute for testing; change it to your desired interval
+    - cron: "*/1 * * * *" 
+
+  workflow_dispatch: # Allows you to manually trigger the workflow from GitHub
+    inputs: {}
+
+jobs:
+  sync-playlists:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Request to API
+        env:
+          API_ENDPOINT: "http://localhost:3000/api/sync"
+        run: |
+          echo "Triggering API at $API_ENDPOINT"
+          curl -X GET "$API_ENDPOINT"

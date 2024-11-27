@@ -207,7 +207,7 @@ app.get("/sync-playlists", async (req, res) => {
 });
 
 // Start the server
-const PORT = 3000;
+PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
   open(`http://localhost:${PORT}`);
