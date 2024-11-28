@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/sync.js": {
-      "runtime": "@vercel/node"
-    }
-  }
-}
